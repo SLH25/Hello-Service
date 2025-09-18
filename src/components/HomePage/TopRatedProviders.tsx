@@ -11,7 +11,6 @@ export interface Provider {
   responseTime: string;
   location: string;
   skills: string[];
-  priceRange: string;
   avatar: string;
   verified: boolean;
   badge?: "Top Rated" | "Expert" | "Premium"; // Type strict pour le badge
@@ -27,7 +26,6 @@ const providers: Provider[] = [
     responseTime: "30 min",
     location: "New York, NY",
     skills: ["Emergency", "Licensed", "Piping"],
-    priceRange: "$50-80/hr",
     avatar: "",
     verified: true,
     badge: "Top Rated",
@@ -41,7 +39,6 @@ const providers: Provider[] = [
     responseTime: "1 hour",
     location: "Paris, FR",
     skills: ["React", "Node.js", "UI/UX"],
-    priceRange: "$60-120/hr",
     avatar: "",
     verified: true,
     badge: "Expert",
@@ -55,7 +52,6 @@ const providers: Provider[] = [
     responseTime: "15 min",
     location: "Austin, TX",
     skills: ["Wiring", "Inspection", "Residential"],
-    priceRange: "$70-110/hr",
     avatar: "",
     verified: true,
   },
@@ -68,7 +64,6 @@ const providers: Provider[] = [
     responseTime: "45 min",
     location: "Milan, IT",
     skills: ["Bridal", "Photo-ready", "Hygiene"],
-    priceRange: "$150-300/hr",
     avatar: "",
     verified: true,
     badge: "Premium",
@@ -259,16 +254,11 @@ const TopRatedProviders: React.FC = () => {
 
                     {/* Price and CTA */}
                     <div className="mt-auto">
-                      <div className="text-center mb-4">
-                        <span className="text-xl font-bold text-gray-900 dark:text-white">
-                          {provider.priceRange}
-                        </span>
-                      </div>
                       
                       <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="w-full group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                        className="w-full group bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                       >
                         View Profile
                         <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
@@ -291,7 +281,7 @@ const TopRatedProviders: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-2xl"
+            className="group inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600  text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-2xl"
           >
             Browse All Providers
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />

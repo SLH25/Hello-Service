@@ -3,122 +3,80 @@
 
 export default function Logo({
   width = 420,
-  dark = false,
   className = "",
-  ariaLabel = "Hello Service logo",
+  ariaLabel = "HelloServices logo",
 }) {
-  const height = (width * 120) / 420;
+  const height = (width * 152) / 420;
 
-  const colors = dark
-    ? {
-        rect: "url(#darkGradient)", // dégradé dark mode
-        mainText: "#FFFFFF",
-        handleFill: "#FFFFFF",
-        slogan: "#E6F0FF",
-      }
-    : {
-        rect: "url(#darkGradient)", // dégradé light mode
-        mainText: "#FFFFFF",
-        handleFill: "#111111",
-        slogan: "#333333",
-      };
+  // Couleurs inspirées de l'image fournie
+  const ORANGE = "#F59E0B"; // fond
+  const WHITE = "#FFFFFF"; // texte HelloServices
+  const BLACK = "#111111"; // combiné + slogan
 
   return (
     <svg
       role="img"
       aria-label={ariaLabel}
       width={width}
-      height={height + 32}
+      height={height}
       viewBox="0 0 420 152"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>{ariaLabel}</title>
 
-      {/* Dégradés */}
-      <defs>
-        <linearGradient id="lightGradient" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#FB8C00" />
-          <stop offset="100%" stopColor="#FF4D4D" />
-        </linearGradient>
-        <linearGradient id="darkGradient" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#1E88E5" />
-          <stop offset="100%" stopColor="#6A11CB" />
-        </linearGradient>
-      </defs>
+      {/* Fond orange, coins fortement arrondis */}
+      <rect x="12" y="14" width="396" height="96" rx="20" fill={ORANGE} />
 
-      {/* Fond avec coins arrondis */}
-      <rect x="0" y="0" width="420" height="120" rx="20" fill={colors.rect} />
-
+      {/* Texte principal "HelloServices" en blanc */}
       <g aria-hidden="true">
-        {/* Glow derrière H */}
+        {/* Gros H vide pour laisser place au combiné noir */}
         <text
-          x="36"
+          x="42"
           y="78"
-          fill={colors.mainText}
-          fontSize="64"
+          fill={WHITE}
+          fontSize="60"
           fontFamily="ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial"
           fontWeight="800"
           letterSpacing="0.5"
-          style={{
-            filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.4))",
-          }}
         >
           H
         </text>
 
-        {/* Icône type poignée */}
-        <g transform="translate(112,20)">
-          <g transform="translate(0,4)">
-            <rect
-              x="8"
-              y="2"
-              width="16"
-              height="6"
-              rx="3"
-              fill={colors.handleFill}
-            />
-            <rect
-              x="60"
-              y="46"
-              width="16"
-              height="6"
-              rx="3"
-              fill={colors.handleFill}
-            />
-          </g>
-
+        {/* Combiné de téléphone noir intégré au H */}
+        <g transform="translate(68,44) rotate(-20)">
           <path
-            d="M20 10c6.5-6.5 17-6.5 23.5 0l3.2 3.2c2 2 2 5.2 0 7.2l-8 8c-2 2-5.2 2-7.2 0l-1.8-1.8a4 4 0 0 0-5.7 0L14 35.8a4 4 0 0 0 0 5.7l1.8 1.8c2 2 2 5.2 0 7.2l-8 8c-2 2-5.2 2-7.2 0L-2.6 55c-6.5-6.5-6.5-17 0-23.5l22.6-21.6z"
-            fill={colors.handleFill}
+            d="M16 0c3.6 0 6.6 3 6.6 6.6v3.2c0 1.6-0.6 3.1-1.8 4.2l-5.9 5.6c-1.4 1.4-3.7 1.4-5.1 0l-1.8-1.8c-0.9-0.9-2.4-0.9-3.3 0L0 20.6c-0.9 0.9-0.9 2.4 0 3.3l1.8 1.8c1.4 1.4 1.4 3.7 0 5.1l-5.6 5.9C-4.9 37.9-6.4 38.5-8 38.5h-3.2C-15 38.5-18 35.5-18 31.9c0-12.8 10.4-23.1 23.1-23.1H8.5C11.1 8.8 13.9 6.1 16 3.4 16.6 2.7 16.9 1.9 16.9 1 16.9 0.6 16.5 0 16 0z"
+            fill={BLACK}
           />
         </g>
 
-        {/* Texte principal */}
+        {/* "elloServices" pour compléter le mot, en blanc */}
         <text
-          x="160"
+          x="98"
           y="78"
-          fill={colors.mainText}
+          fill={WHITE}
           fontSize="44"
           fontFamily="ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial"
           fontWeight="700"
           letterSpacing="0.5"
         >
-          lloServices
+          elloServices
         </text>
       </g>
 
-      {/* Slogan */}
+      {/* Slogan noir centré sous le bloc orange */}
       <text
         x="210"
-        y="142"
+        y="138"
         textAnchor="middle"
-        fill={colors.slogan}
-        fontSize="16"
+        fill={BLACK}
+        fontSize="14"
         fontFamily="ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial"
-        fontWeight="500"
+        fontWeight="800"
+        letterSpacing="1.2"
       >
-        Your Hello, Delivered with Service
+        PROXIMITÉ, QUALITÉ ET CONFIANCE
       </text>
     </svg>
   );

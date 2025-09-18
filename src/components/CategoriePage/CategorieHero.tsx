@@ -16,7 +16,7 @@ export default function ServiceHero() {
           transition={{ duration: 0.6 }}
           className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
-          Nos categories des Services, Votre <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Solution</span>
+          Nos categories des Services, Votre <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Solution</span>
         </motion.h1>
 
         {/* Sous-texte */}
@@ -38,7 +38,7 @@ export default function ServiceHero() {
         >
           <Link
             to="/categories"
-            className="px-6 py-3 rounded-2xl font-semibold text-white bg-gradient-to-br from-blue-600 to-purple-600 hover:scale-[1.02] hover:shadow-xl transition"
+            className="px-6 py-3 rounded-2xl font-semibold text-white bg-gradient-to-br from-yellow-400 to-orange-500 hover:scale-[1.02] hover:shadow-xl transition"
           >
             Explorer les services
           </Link>

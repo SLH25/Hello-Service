@@ -19,7 +19,7 @@ const ContactCTA: React.FC = () => {
     >
       {/* Decorative gradient accents to match existing system */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-10 -right-6 h-72 w-72 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 opacity-20 blur-3xl" />
+        <div className="absolute -top-10 -right-6 h-72 w-72 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 opacity-20 blur-3xl" />
         <div className="absolute -bottom-10 -left-6 h-72 w-72 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 opacity-10 blur-3xl" />
       </div>
 
@@ -58,10 +58,10 @@ const ContactCTA: React.FC = () => {
                 <Link
                   to="/signup"
                   aria-label="S'inscrire"
-                  className="relative inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+                  className="relative inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 px-5 py-3 text-sm font-semibold text-white shadow-md transition focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
                 >
                   {/* hover glow */}
-                  <span className="pointer-events-none absolute -inset-0.5 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 opacity-0 blur group-hover:opacity-30" />
+                  <span className="pointer-events-none absolute -inset-0.5 rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 opacity-0 blur group-hover:opacity-30" />
                   <span className="relative">S'inscrire</span>
                 </Link>
               </div>

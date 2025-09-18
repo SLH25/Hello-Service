@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
               />
               <button
                 type="submit"
-                className="w-full px-6 py-3 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-2xl transition-all duration-200"
+                className="w-full px-6 py-3 rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold shadow-lg hover:shadow-2xl transition-all duration-200"
               >
                 Envoyer
               </button>

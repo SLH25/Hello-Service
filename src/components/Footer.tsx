@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
     <footer aria-label="Pied de page" className="relative mt-16 sm:mt-20">
       {/* Decorative gradient accents */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute top-0 left-0 h-64 w-64 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 opacity-10 blur-3xl" />
+        <div className="absolute top-0 left-0 h-64 w-64 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 opacity-10 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 opacity-10 blur-3xl" />
       </div>
 
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             {/* Column 1: Logo + Description */}
             <div>
               <Link to="/" className="inline-flex items-center gap-2 group">
-                <span className="inline-flex size-9 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 text-white shadow-md group-hover:shadow-lg transition-shadow">
+                <span className="inline-flex size-9 items-center justify-center rounded-lg bg-gradient-to-br from-yellow-400 to-orange-500 text-white shadow-md group-hover:shadow-lg transition-shadow">
                   HS
                 </span>
                 <span className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
                     rel="noreferrer noopener"
                     className="relative inline-flex items-center justify-center rounded-lg border border-gray-200/60 dark:border-white/10 bg-white/80 dark:bg-gray-800/80 backdrop-blur p-2.5 text-gray-700 dark:text-gray-300 hover:text-white transition group"
                   >
-                    <span className="pointer-events-none absolute -inset-0.5 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 opacity-0 blur group-hover:opacity-40 transition-opacity" />
+                    <span className="pointer-events-none absolute -inset-0.5 rounded-lg bg-gradient-to-br from-yellow-400 to-orange-500 opacity-0 blur group-hover:opacity-40 transition-opacity" />
                     <Icon className="relative size-5" aria-hidden="true" />
                   </a>
                 ))}

@@ -66,7 +66,7 @@ const navLinks = [
                 className="w-56 pl-10 pr-3 py-2 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 focus-visible:ring-offset-white dark:focus-visible:ring-offset-gray-900 transition"
               />
               <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
-                <div className="w-6 h-6 rounded-md flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 p-[2px]">
+                <div className="w-6 h-6 rounded-md flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 p-[2px]">
                   <Search size={14} className="text-white" />
                 </div>
               </div>
@@ -92,7 +92,7 @@ const navLinks = [
 
             <Link
               to="/signup"
-              className="relative inline-flex items-center gap-2 px-4 py-2 rounded-2xl font-semibold text-white bg-gradient-to-br from-blue-600 to-purple-600 hover:scale-[1.01] hover:shadow-2xl transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 dark:focus-visible:ring-offset-gray-900 text-sm"
+              className="relative inline-flex items-center gap-2 px-4 py-2 rounded-2xl font-semibold text-white bg-gradient-to-br from-yellow-400 to-orange-500 hover:scale-[1.01] hover:shadow-2xl transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 dark:focus-visible:ring-offset-gray-900 text-sm"
             >
               S'inscrire
               {/* subtle moving gloss effect */}
@@ -188,7 +188,7 @@ const navLinks = [
                 <Link
                   to="/signup"
                   onClick={() => setIsOpen(false)}
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-2xl font-semibold text-white bg-gradient-to-br from-blue-600 to-purple-600 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 dark:focus-visible:ring-offset-gray-900"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-2xl font-semibold text-white bg-gradient-to-br from-yellow-400 to-orange-500 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 dark:focus-visible:ring-offset-gray-900"
                 >
                   S'inscrire
                 </Link>

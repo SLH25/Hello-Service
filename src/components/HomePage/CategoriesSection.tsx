@@ -203,7 +203,7 @@ const CategoriesSection: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             type="button"
             aria-label="Voir plus"
-            className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-2xl"
+            className="group inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-2xl"
           >
             Voir plus
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
