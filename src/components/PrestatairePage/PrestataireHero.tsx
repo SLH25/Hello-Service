@@ -37,7 +37,7 @@ export default function PrestataireHero() {
           className="mt-8 flex flex-wrap justify-center gap-4"
         >
           <Link
-            to="/categories"
+            to="/services"
             className="px-6 py-3 rounded-2xl font-semibold text-white bg-gradient-to-br from-yellow-400 to-orange-500 hover:scale-[1.02] hover:shadow-xl transition"
           >
             Explorer les services

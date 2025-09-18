@@ -115,7 +115,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ dark = false }) => {
                 type="button"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold shadow-lg hover:shadow-2xl transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-white dark:focus:ring-offset-gray-900"
               >
-                Voir toutes les catégories
+                Voir toutes les Services
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </div>
