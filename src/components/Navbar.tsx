@@ -41,7 +41,7 @@ const navLinks = [
             >
               {/* subtle decorative gradient behind logo to match Categories look */}
               <span className="absolute -left-3 -top-3 w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-10 blur-2xl pointer-events-none" />
-              <Logo width={150} dark={dark} />
+              <Logo />
             </Link>
           </div>
 
