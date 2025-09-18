@@ -18,7 +18,7 @@ export default function Navbar({ dark, setDark }: NavbarProps) {
 const navLinks = [
   { name: "Accueil", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "Catégories", path: "/categories" },
+  { name: "Prestataires", path: "/Prestataires" },
   { name: "À propos", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];
@@ -39,7 +39,7 @@ const navLinks = [
               aria-label="Accueil"
               className="relative flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 dark:focus-visible:ring-offset-gray-900 rounded-2xl"
             >
-              {/* subtle decorative gradient behind logo to match Categories look */}
+              {/* subtle decorative gradient behind logo to match Prestataires look */}
               <span className="absolute -left-3 -top-3 w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-10 blur-2xl pointer-events-none" />
               <Logo width={150} />
             </Link>

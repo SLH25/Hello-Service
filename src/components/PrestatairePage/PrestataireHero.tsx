@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export default function ServiceHero() {
+export default function PrestataireHero() {
   return (
     <section className="relative bg-white dark:bg-gray-900 overflow-hidden">
       {/* Background gradient */}
@@ -16,7 +16,7 @@ export default function ServiceHero() {
           transition={{ duration: 0.6 }}
           className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
-          Nos categories des Services, Votre <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Solution</span>
+          Des professionnels fiables à portée de main
         </motion.h1>
 
         {/* Sous-texte */}
@@ -26,7 +26,7 @@ export default function ServiceHero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300"
         >
-          Découvrez nos categories des services. Trouvez facilement le professionnel idéal.<strong>Hello Service</strong>, vos besoins trouvent toujours une réponse adaptée.
+         Parcourez nos prestataires qualifiés et trouvez celui qui répond parfaitement à vos besoins.
         </motion.p>
 
         {/* Boutons */}
